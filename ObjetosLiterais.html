@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientaçao a Objetos</title>
+
+
+    <script>
+
+        let produtoLiteral = {
+            descricao : 'Geladeira',
+            preco: 1800,
+            verDescricao: function(){
+                console.log(`${this.descricao} por apenas ${this.preco} `)
+
+            }
+
+        }
+
+        produtoLiteral.verDescricao()
+
+
+        // Codigo melhor escrito
+
+        let nome = 'Jorge'
+        let idade = 30
+        let sexo = 'Masculino'
+        let profissao = 'Progamador'
+
+
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao : profissao, 
+            exibirResumo: function () {
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} e ${this.profissao} `)
+            }
+
+
+
+        }
+
+        console.log(objeto)
+        objeto.exibirResumo()
+
+
+        let objeto2 = {
+            nome,
+            idade,
+            sexo,
+            profissao, 
+            exibirResumo() {
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} e ${this.profissao} `)
+            }
+
+
+
+        }
+
+        console.log(objeto2)
+        objeto2.exibirResumo()
+
+        
+
+
+        
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
